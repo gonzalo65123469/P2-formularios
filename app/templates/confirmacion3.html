@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Confirmación de Gestión de Productos</title>
+</head>
+<body>
+    <h1>Confirmación de Gestión de Productos</h1>
+    <p>Producto: {{ producto }}</p>
+    <p>Categoría: {{ categoria }}</p>
+    <p>Existencia: {{ existencia }}</p>
+    <p>Precio: {{ precio }}</p>
+    <a href="/formulario3"><button>Volver al formulario</button></a>
+</body>
+</html>

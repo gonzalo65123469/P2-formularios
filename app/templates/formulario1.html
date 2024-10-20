@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Inscripción en curso</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Inscripción en curso</h1>
+        <form action="/formulario1" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br>
+            <label for="curso">Curso:</label><br>
+            <select name="curso" id="curso" required>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Ciencias">Ciencias</option>
+                <option value="Historia">Historia</option>
+            </select><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

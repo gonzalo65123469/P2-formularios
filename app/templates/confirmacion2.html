@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Confirmación de Registro</title>
+</head>
+<body>
+    <h1>Confirmación de Registro</h1>
+    <p>Nombre: {{ nombre }}</p>
+    <p>Apellidos: {{ apellidos }}</p>
+    <p>Email: {{ email }}</p>
+    <p>Contraseña: {{ contrasena }}</p>
+    <a href="/formulario2"><button>Volver al formulario</button></a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Confirmación de Registro de Libros</title>
+</head>
+<body>
+    <h1>Confirmación de Registro de Libros</h1>
+    <p>Título: {{ titulo }}</p>
+    <p>Autor: {{ autor }}</p>
+    <p>Resumen: {{ resumen }}</p>
+    <p>Medio de Publicación: {{ medio }}</p>
+    <a href="/formulario4"><button>Volver al formulario</button></a>
+</body>
+</html>
